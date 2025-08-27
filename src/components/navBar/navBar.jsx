@@ -3,7 +3,7 @@ import './NavBar.css';
 import logo2 from '../../assets/images/cineverse-logo-2.png';
 import userIcon from '../../assets/images/user-icon-2.png';
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
     // Los links to son para que al apretar te lleve a esa pagina
     <nav className="navbar">
@@ -34,4 +34,3 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;

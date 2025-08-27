@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import MovieCard from '../MovieCard/MovieCard';
+import { MovieCard } from '../MovieCard/MovieCard';
+import { movies as mockMovies } from '../../data/movies';
 
-const MovieListings = () => {
+export const MovieListings = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    // El useEffect es para obtener los datos de las peliculas desde el backend (base de datos)
+    setMovies(mockMovies);
   }, []);
 
   return (
-    <div className="showcase">
+    <div className="movielistings">
       {movies.map(movie => (
         <MovieCard
           key={movie.id}
@@ -22,4 +23,4 @@ const MovieListings = () => {
   );
 };
 
-export default MovieListings
+ 
