@@ -1,0 +1,33 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: #111;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.carousel-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.3);
+}
+
+.nav {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav:hover {
+  transform: scale(1.2);
+}

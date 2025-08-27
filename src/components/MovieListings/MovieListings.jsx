@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { MovieCard } from '../MovieCard/MovieCard';
 import { movies as mockMovies } from '../../data/movies';
+import './MovieListings.css';
+
 
 export const MovieListings = () => {
-  const [movies, setMovies] = useState([]);
+ const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     setMovies(mockMovies);
@@ -16,7 +18,7 @@ export const MovieListings = () => {
           key={movie.id}
           id={movie.id}
           title={movie.title}
-          posterUrl={movie.posterUrl}
+          poster={movie.posterUrl}
         />
       ))}
     </div>

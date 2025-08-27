@@ -6,6 +6,7 @@
 
 .movie-card {
   width: 180px;
+  height: 350px;
   background-color: #0d0d0d;
   border-radius: 12px;
   overflow: hidden;
